@@ -4,6 +4,10 @@
 class c_pi {
 public:
 	double leibniz(double n) {
+		if (n == 0) {
+			return n;
+		}
+
 		double pi = 0;
 		double sign = 1;
 
@@ -16,6 +20,10 @@ public:
 	}
 
 	double wallis(double n) {
+		if (n == 0) {
+			return n;
+		}
+		
 		double pi = 4.;
 
 		for (double i = 3; i <= (n + 2); i += 2) {
@@ -26,6 +34,10 @@ public:
 	}
 
 	double nilakantha(double n) {
+		if (n == 0) {
+			return n;
+		}
+
 		double pi = 3;
 		double sign = 1;
 

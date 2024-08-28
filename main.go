@@ -6,7 +6,7 @@ import (
 
 func pi_leibniz(n float64) (float64, error) {
 	if n == 0 {
-		return 0, errors.New("n cant be 0")
+		return n, errors.New("n cant be 0")
 	}
 
 	var pi float64 = 0
@@ -14,7 +14,7 @@ func pi_leibniz(n float64) (float64, error) {
 	var i float64 = 1
 
 	for i = 1; i <= (n * 2); i += 2 {
-		pi = pi + sign*(4 / i)
+		pi = pi + sign * (4 / i)
 		sign = -sign
 	}
 
@@ -23,7 +23,7 @@ func pi_leibniz(n float64) (float64, error) {
 
 func pi_wallis(n float64) (float64, error) {
 	if n == 0 {
-		return 0, errors.New("n cant be 0")
+		return n, errors.New("n cant be 0")
 	}
 
 	var pi float64 = 4.
@@ -38,7 +38,7 @@ func pi_wallis(n float64) (float64, error) {
 
 func pi_nilakantha(n float64) (float64, error) {
 	if n == 0 {
-		return 0, errors.New("n cant be 0")
+		return n, errors.New("n cant be 0")
 	}
 
 	var pi float64 = 3
